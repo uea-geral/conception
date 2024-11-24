@@ -4,11 +4,44 @@
 <head>
   <meta charset="UTF-8" />
   <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+  <link href="https://fonts.googleapis.com/icon?family=Material+Icons" rel="stylesheet">
   <title>Conception</title>
 </head>
 
 <body>
-  <div id="app"></div>
+  <div id="app">
+    <header id="header" class="header">
+      <a href="https://github.com/uea-geral/conception/" class="link" target="_blank">
+        Github
+      </a>
+      <img src="logo.png" alt="Conception">
+      <h2>No-Code Platform to prototype web system projects.</h2>
+    </header>
+
+    <main id="main" class="main">
+      <!-- Prompt -->
+      <form class="module form-prompt">
+        <div class="input-group">
+          <label class="label">Enter with a prompt</label>
+          <input type="text" class="input" placeholder="Describe your project here">
+        </div>
+        <label class="label">or</label>
+        <div class="file-group">
+          <span class="material-icons">
+            upload_file
+          </span>
+          <label id="import-file">Click here to import a file</label>
+        </div>
+
+        <button class="button submit primary">Generate the conception</button>
+      </form>
+
+      <!-- Showing the results -->
+
+
+    </main>
+
+  </div>
   <script type="module" src="/src/main.ts"></script>
 </body>
 

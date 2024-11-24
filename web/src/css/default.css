@@ -1,0 +1,44 @@
+* {
+  color: var(--neutral);
+}
+
+html,
+body,
+#app {
+  background-color: var(--background);
+}
+
+button {
+  cursor: pointer;
+}
+
+button.button.primary,
+button.button.primary.outline:hover {
+  padding: 10px;
+  border-radius: 4px;
+  font-weight: 600;
+  color: var(--neutral);
+  background-color: var(--primary);
+  border: 1px solid var(--neutral);
+  transition: background-color 0.1s;
+}
+
+button.button.primary.outline,
+button.button.primary:hover {
+  color: var(--neutral);
+  background-color: transparent;
+  border: 1px solid var(--neutral);
+}
+
+.input {
+  padding: 10px;
+  border-radius: 4px;
+  background: transparent;
+  border: 0px;
+  outline: 1px solid var(--neutral);
+  transition: outline-width 0.1s;
+}
+
+.input:focus {
+  outline-width: 2px;
+}
