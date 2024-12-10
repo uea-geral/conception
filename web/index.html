@@ -20,25 +20,34 @@
 
     <main id="main" class="main">
       <!-- Prompt -->
-      <form class="module form-prompt">
+      <form id="forms" class="module form-prompt">
         <div class="input-group">
           <label class="label">Enter with a prompt</label>
-          <input type="text" class="input" placeholder="Describe your project here">
+          <input id="prompt" type="text" class="input" placeholder="Describe your project here">
         </div>
-        <label class="label">or</label>
-        <div class="file-group">
-          <span class="material-icons">
+        <!-- <label class="label">or</label> -->
+        <!-- <div class="file-group" class="import-file">
+          <span class="material-icons" class="import-file">
             upload_file
           </span>
-          <label id="import-file">Click here to import a file</label>
-        </div>
+          <label class="import-file">Click here to import a file</label>
+          <input id="file" type="file" hidden />
+        </div> -->
 
-        <button class="button submit primary">Generate the conception</button>
+        <button type="submit" class="button submit primary">Generate the conception</button>
       </form>
 
       <!-- Showing the results -->
 
+      <ul class="options">
+      </ul>
 
+      <div class="code">
+      </div>
+
+      <div class="notifications">
+        <label class="content">Gerando o código do requisito...</label>
+      </div>
     </main>
 
   </div>
